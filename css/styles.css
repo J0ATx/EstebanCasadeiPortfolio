@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    line-height: 1.6;
+    color: #ececec;
+    background-color: #303030;
+    font-family: Arial, sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+.main-header {
+    height: 130px;
+    position: fixed;
+    background-color: #303030;
+    width: 100%;
+}
+
+main {
+    background-color: #242424;
+}
+
+.spacer {
+    padding: 12px;
+    padding-left: 16px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    background-color: #000000;
+    height: 64px;
+}
+
+.nav-tabs .nav-link {
+    position: relative;
+    color: #c4c4c4;
+    border: none;
+    background-color: #191919;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin-top: 16px;
+    width: fit-content;
+    padding-left: 6px;
+    padding-right: 64px;
+    height: 48px;
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #fff;
+    background-color: #333333;
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #333333;
+    border: none;
+
+}
+
+.nav-tabs .nav-link svg {
+    max-width: 20px;
+    max-height: 20px;
+    flex-shrink: 0;
+}
+
+.nav-tabs .nav-link:not(.home-tab) svg {
+    max-width: 100px;
+    max-height: 100px;
+    height: 32px;
+    width: 32px;
+}
+
+.nav-tabs .home-tab {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 16px;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 32px;
+    padding-top: 150px;
+}
+
+.home {
+    background-color: #242424;
+}
+
+.about {
+    background-color: #2b2b2b;
+}
+
+.projects {
+    background-color: #1e1e1e;
+}
+
+.contact {
+    background-color: #242424;
+}
+
+.projects-list {
+    list-style: none;
+}
+
+.projects-list .project-item {
+    margin-bottom: 40px;
+}
+
+.page-title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contact-form .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #ececec;
+}
+
+.contact-form .form-control {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #ececec;
+    padding: 0.75rem;
+}
+
+.contact-form .form-control:focus {
+    background-color: #333;
+    border-color: #007bff;
+    color: #ececec;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.contact-form .form-control::placeholder {
+    color: #999;
+}
+
+.contact-form .form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.contact-form .btn-outline-secondary {
+    border-color: #6c757d;
+    color: #6c757d;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.contact-form .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.contact-form .invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.contact-form .alert-success {
+    background-color: rgba(40, 167, 69, 0.2);
+    border-color: #28a745;
+    color: #28a745;
+}
+
+.contact-form .spinner-border {
+    color: #fff;
+}
+
+@media (max-width: 610px) {
+    .nav-tabs .nav-link {
+        padding-left: 4px;
+        padding-right: 32px;
+        font-size: 0.85rem;
+        margin-right: 4px;
+    }
+
+    .nav-tabs .home-tab {
+        width: 38px;
+        height: 38px;
+        border-radius: 14px;
+        margin-left: 8px;
+        margin-right: 8px;
+        padding: 0;
+    }
+
+    .nav-tabs .home-tab svg {
+        max-height: 18px;
+        max-width: 18px;
+        height: 18px;
+        width: 18px;
+    }
+
+    .nav-tabs .nav-link:not(.home-tab) svg {
+        height: 24px;
+        width: 24px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .nav-tabs .nav-link {
+        padding-left: 2px;
+        padding-right: 16px;
+        font-size: 0.75rem;
+        margin-right: 2px;
+        margin-top: 16px;
+    }
+
+    .nav-tabs .home-tab {
+        padding: 0;
+        margin-right: 8px;
+    }
+
+    .nav-tabs .nav-link:not(.home-tab) svg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media (max-width: 340px) {
+    .nav-tabs .nav-link {
+        padding-left: 2px;
+        padding-right: 16px;
+        font-size: 0.6rem;
+        margin-right: 2px;
+        margin-top: 32px;
+        height: 32px;
+    }
+
+    .nav-tabs .home-tab {
+        padding: 0;
+        margin-right: 8px;
+        width: 24px;
+        height: 24px;
+        border-radius: 8px;
+    }
+
+    .nav-tabs .home-tab svg {
+        max-height: 12px;
+        max-width: 12px;
+        height: 12px;
+        width: 12px;
+    }
+
+    .nav-tabs .nav-link:not(.home-tab) svg {
+        height: 20px;
+        width: 20px;
+    }
+}
