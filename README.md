@@ -6,4 +6,6 @@ Personal developer portfolio built with:
 - CSS
 - Bootstrap
 - JavaScript
+
+Subsequently:
 - React
