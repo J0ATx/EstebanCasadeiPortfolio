@@ -1,0 +1,186 @@
+// Navigation tabs
+.nav-tabs {
+  border-bottom: none;
+  background-color: $bg-dark;
+  height: $nav-height;
+
+  .nav-link {
+    position: relative;
+    color: $text-secondary;
+    border: none;
+    background-color: $bg-medium;
+    border-top-left-radius: $border-radius-lg;
+    border-top-right-radius: $border-radius-lg;
+    margin-top: 16px;
+    width: fit-content;
+    padding-left: 6px;
+    padding-right: 64px;
+    height: $tab-height;
+    margin-right: 6px;
+    @include flex-align-center;
+    gap: 4px;
+
+    &:hover {
+      color: $text-white;
+      background-color: $bg-light;
+    }
+
+    &.active {
+      color: $text-white;
+      background-color: $bg-light;
+      border: none;
+    }
+
+    svg {
+      max-width: $icon-md;
+      max-height: $icon-md;
+      flex-shrink: 0;
+    }
+
+    &:not(.home-tab) svg {
+      max-width: 100px;
+      max-height: 100px;
+      height: $icon-xl;
+      width: $icon-xl;
+    }
+
+    @include mobile-large {
+      padding-left: 4px;
+      padding-right: 32px;
+      font-size: $font-size-md;
+      margin-right: 4px;
+    }
+
+    @include mobile-medium {
+      padding-left: 2px;
+      padding-right: 16px;
+      font-size: $font-size-sm;
+      margin-right: 2px;
+      margin-top: 16px;
+    }
+
+    @include mobile-small {
+      padding-left: 2px;
+      padding-right: 16px;
+      font-size: $font-size-xs;
+      margin-right: 2px;
+      margin-top: 32px;
+      height: $tab-height-xs;
+    }
+  }
+
+  .home-tab {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    @include flex-center;
+    padding: 0;
+    border-radius: $border-radius-lg;
+
+    @include mobile-large {
+      width: $tab-height-sm;
+      height: $tab-height-sm;
+      border-radius: $border-radius-md;
+      margin-left: 8px;
+      margin-right: 8px;
+      padding: 0;
+
+      svg {
+        max-height: $icon-sm;
+        max-width: $icon-sm;
+        height: $icon-sm;
+        width: $icon-sm;
+      }
+    }
+
+    @include mobile-medium {
+      padding: 0;
+      margin-right: 8px;
+    }
+
+    @include mobile-small {
+      padding: 0;
+      margin-right: 8px;
+      width: $tab-height-xxs;
+      height: $tab-height-xxs;
+      border-radius: $border-radius-sm;
+
+      svg {
+        max-height: $icon-xs;
+        max-width: $icon-xs;
+        height: $icon-xs;
+        width: $icon-xs;
+      }
+    }
+  }
+
+  .nav-link:not(.home-tab) svg {
+    @include mobile-large {
+      height: $icon-lg;
+      width: $icon-lg;
+    }
+
+    @include mobile-medium {
+      height: $icon-md;
+      width: $icon-md;
+    }
+
+    @include mobile-small {
+      height: $icon-md;
+      width: $icon-md;
+    }
+  }
+}
+
+// Contact form components
+.contact-form {
+  .form-label {
+    display: block;
+    margin-bottom: $spacing-sm;
+    font-weight: 500;
+    color: $text-primary;
+  }
+
+  .form-control {
+    @include form-control;
+
+    &.form-textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+  }
+
+  .btn-primary {
+    @include button-primary;
+  }
+
+  .btn-outline-secondary {
+    @include button-secondary;
+  }
+
+  .invalid-feedback {
+    color: $danger-color;
+    font-size: 0.875rem;
+    margin-top: $spacing-xs;
+  }
+
+  .alert-success {
+    background-color: rgba($success-color, 0.2);
+    border-color: $success-color;
+    color: $success-color;
+  }
+
+  .spinner-border {
+    color: $text-white;
+  }
+}
+
+// Project list
+.projects-list {
+  list-style: none;
+
+  .project-item {
+    margin-bottom: 40px;
+  }
+}

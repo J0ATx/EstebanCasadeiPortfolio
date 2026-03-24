@@ -1,0 +1,169 @@
+.projects {
+    padding-inline: 200px;
+    padding-block: 128px;
+
+    @include desktop-large {
+        padding-inline: 64px !important;
+    }
+
+    .projects-list {
+        padding: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        @include desktop-extra-large {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .project-item {
+            @include desktop-extra-large {
+                margin: 0 auto;
+            }   
+        }
+    }
+
+    .title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        @include page-title-mixin(#B17FEE);
+        font-size: 6vw;
+        padding-inline: 16px;
+        font-weight: bold;
+        animation: slideInFromLeft 1s ease-out forwards;
+        animation-timeline: scroll(root block);
+        animation-range: 0 50%;
+    }
+
+    .project-container {
+        @include page-title-mixin(#2898FF);
+        width: 500px;
+        background-color: #353535;
+
+        @include tablet {
+            width: 400px;
+        }
+
+        @include mobile-large {
+            width: 300px;
+        }
+
+        @include mobile-medium {
+            width: 200px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-title {
+            color: $primary-color;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-inline: 1rem;
+
+            @include mobile-large {
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+
+        .pills-type {
+            font-size: 0.8rem;
+            color: $tertiary-color;
+            text-transform: uppercase;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: fit-content;
+            background-color: $bg-light;
+            padding: 0.5rem 1rem;
+            border-radius: 5rem;
+            border: 1px solid $secondary-hover;
+            margin-inline: 1rem;
+
+            @include mobile-large {
+                margin-inline: auto;
+                font-size: 0.7rem;
+                padding: 0.25rem 0.5rem;
+            }
+        }
+
+        .pills-languages {
+            display: flex;
+            gap: 0.5rem;
+            margin-inline: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+
+            @include mobile-large {
+                justify-content: center;
+            }
+
+            .pill {
+                font-size: 0.875rem;
+                color: white;
+                text-transform: uppercase;
+                background-color: $bg-light;
+                padding: 0.5rem 1rem;
+                border-radius: 32px;
+                border: 1px solid $secondary-hover;
+                margin-bottom: 0.5rem;
+
+                @include mobile-large {
+                    font-size: 0.6rem;
+                    padding: 0rem 0.5rem;
+                    gap: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+
+        .btn-container {
+            display: flex;
+            gap: 0.5rem;
+            margin-inline: 1rem;
+            margin-bottom: 1rem;
+
+            .btn {
+                transition: $transition-fast;
+
+                @include mobile-medium {
+                    font-size: 0.7rem;
+                }
+            }
+
+            .btn-project {
+                width: 100%;
+                height: 3rem;
+                border-radius: 0.5em;
+            }
+
+            .btn-code {
+                width: 100%;
+                height: 3rem;
+                border-radius: 0.5em;
+                background-color: transparent;
+                color: $text-secondary;
+                border: 2px solid $secondary-hover;
+
+                &:hover {
+                    background-color: $secondary-color;
+                    color: white;
+                    border-color: $secondary-color;
+                }
+            }
+        }
+
+    }
+}

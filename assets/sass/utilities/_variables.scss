@@ -1,0 +1,78 @@
+// Colors
+$primary-color: #2898FF;
+$primary-hover: #0056b3;
+$secondary-color: #6c757d;
+$secondary-hover: #6c757d;
+$tertiary-color: #999;
+$success-color: #28a745;
+$danger-color: #dc3545;
+
+// Background colors
+$bg-primary: #303030;
+$bg-secondary: #242424;
+$bg-tertiary: #2b2b2b;
+$bg-quaternary: #1e1e1e;
+$bg-dark: #000000;
+$bg-medium: #191919;
+$bg-light: #333333;
+
+// Text colors
+$text-primary: #ececec;
+$text-secondary: #c4c4c4;
+$text-muted: #999;
+$text-white: #fff;
+
+// Font sizes
+$font-size-xs: 0.6rem;
+$font-size-sm: 0.75rem;
+$font-size-md: 0.85rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.1rem;
+$font-size-xl: 2rem;
+$font-size-xxl: 4rem;
+
+// Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 0.75rem;
+$spacing-lg: 1rem;
+$spacing-xl: 1.6rem;
+$spacing-xxl: 32px;
+$spacing-xxxl: 150px;
+
+// Border radius
+$border-radius-sm: 8px;
+$border-radius-md: 14px;
+$border-radius-lg: 16px;
+
+// Heights
+$header-height: 136px;
+$nav-height: 64px;
+$tab-height: 48px;
+$tab-height-sm: 38px;
+$tab-height-xs: 32px;
+$tab-height-xxs: 24px;
+
+// Icon sizes
+$icon-xs: 12px;
+$icon-sm: 18px;
+$icon-md: 20px;
+$icon-lg: 24px;
+$icon-xl: 32px;
+$icon-xxl: 44px;
+
+// Breakpoints
+$breakpoint-sm: 350px;
+$breakpoint-md: 438px;
+$breakpoint-lg: 620px;
+$breakpoint-xl: 768px;
+$breakpoint-xxl: 1024px;
+$breakpoint-3xl: 1280px;
+$breakpoint-4xl: 1440px;
+
+// Transitions
+$transition-fast: 0.3s;
+$transition-medium: 0.25rem;
+
+// Z-index
+$z-fixed: 1000;
