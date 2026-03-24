@@ -1,0 +1,204 @@
+// Media queries mixins
+@mixin mobile-small {
+  @media (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin mobile-medium {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin mobile-large {
+  @media (max-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $breakpoint-xxl) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (max-width: $breakpoint-3xl) {
+    @content;
+  }
+}
+
+@mixin desktop-extra-large {
+  @media (max-width: $breakpoint-4xl) {
+    @content;
+  }
+}
+
+// Flexbox mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+// Button mixins
+@mixin button-base {
+  padding: $spacing-md;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  transition: $transition-fast;
+  
+  &:hover {
+    transition: $transition-fast;
+  }
+}
+
+@mixin button-primary {
+  @include button-base;
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: $text-white;
+  
+  &:hover {
+    background-color: $primary-hover;
+    border-color: $primary-hover;
+    color: $text-white;
+  }
+}
+
+@mixin button-secondary {
+  @include button-base;
+  border-color: $secondary-color;
+  color: $secondary-color;
+  background-color: transparent;
+  
+  &:hover {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: $text-white;
+  }
+}
+
+// Form control mixin
+@mixin form-control {
+  background-color: $bg-light;
+  border: 1px solid #555;
+  color: $text-primary;
+  padding: $spacing-md;
+  
+  &:focus {
+    background-color: $bg-light;
+    border-color: $primary-color;
+    color: $text-primary;
+    box-shadow: 0 0 0 $transition-medium rgba($primary-color, 0.25);
+  }
+  
+  &::placeholder {
+    color: $text-muted;
+  }
+}
+
+// Transition mixin
+@mixin transition($properties...) {
+  transition: $properties;
+  transition-duration: $transition-fast;
+}
+
+// Box shadow mixin
+@mixin focus-shadow($color: $primary-color) {
+  box-shadow: 0 0 0 $transition-medium rgba($color, 0.25);
+}
+
+
+@mixin page-title-mixin($color) {
+  position: relative;
+  display: inline-block;
+  border: 3px solid $color;
+  color: $color;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 3px solid $color;
+    border-radius: 2px;
+    z-index: 10;
+  }
+
+  &::before {
+    top: -8px;
+    left: -8px;
+  }
+
+  &::after {
+    bottom: -8px;
+    right: -8px;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: white;
+      border: 3px solid $color;
+      border-radius: 2px;
+      z-index: 10;
+    }
+
+    &::before {
+      top: -8px;
+      right: -8px;
+    }
+
+    &::after {
+      bottom: -8px;
+      left: -8px;
+    }
+  }
+
+  .corner-square {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 3px solid $color;
+    border-radius: 2px;
+    z-index: 10;
+
+    &--top-right {
+      top: -8px;
+      right: -8px;
+    }
+
+    &--bottom-left {
+      bottom: -8px;
+      left: -8px;
+    }
+  }
+}

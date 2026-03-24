@@ -1,0 +1,24 @@
+.section {
+  min-height: 100vh;
+  padding: $spacing-xxl;
+
+  &.home {
+    background-color: $bg-secondary;
+  }
+
+  &.about {
+    background-color: $bg-tertiary;
+    border-top: 2px solid $secondary-hover;
+    min-height: fit-content;
+  }
+
+  &.projects {
+    background-color: $bg-quaternary;
+    border-top: 2px solid $secondary-hover;
+  }
+
+  &.contact {
+    background-color: $bg-secondary;
+    border-top: 2px solid $secondary-hover;
+  }
+}

@@ -6,11 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/public/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/public/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/public/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/public/img/favicon/site.webmanifest">
     <title>Esteban Casadei - Portfolio</title>
 </head>
 
@@ -60,38 +71,236 @@
             </ul>
         </nav>
         <div class="spacer">
-            <img src="assets/img/icons/logo.svg" alt="Esteban Casadei Logo" class="logo-img">
+            <img src="assets/public/img/icons/logo.svg" alt="Esteban Casadei Logo" class="logo-img">
+            <div class="tools">
+                <a href="https://github.com/J0ATx" target="_blank" class="tools-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+                        <path d="M0 0h24v24H0z" stroke="none" />
+                        <path
+                            d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/joaqu%C3%ADn-casadei-087553357/" target="_blank" class="tools-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M8 11v5" />
+                        <path d="M8 8v.01" />
+                        <path d="M12 16v-5" />
+                        <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+                        <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" />
+                    </svg>
+                </a>
+                <a href="assets/public/pdf/CV_Esteban_Casadei.pdf" target="_blank" class="tools-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-file">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                        <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" />
+                    </svg>
+                </a>
+                <a href="mailto:joaquincasadei4@gmail.com" class="tools-link">
+                    <svg width="36" height="36" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <path stroke="#fff" stroke-linejoin="round" stroke-width="12"
+                            d="M22 57.265V142c0 5.523 4.477 10 10 10h24V95.056l40 30.278 40-30.278V152h24c5.523 0 10-4.477 10-10V57.265c0-13.233-15.15-20.746-25.684-12.736L96 81.265 47.684 44.53C37.15 36.519 22 44.032 22 57.265Z" />
+                    </svg>
+                </a>
+                </a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section id="home" class="section">
-            <h1 class="page-title">Esteban Casadei Portfolio</h1>
+        <section id="home" class="section home">
+            <div class="page-title-main">
+                <h1 class="page-text"><span class="page-text__casadei">CASADEI</span> <span
+                        class="page-text__esteban">Esteban</span> <span class="page-text__website">Website</span><span
+                        class="page-text__developer">Developer</span></h1>
+            </div>
+            <h2 class="page-title-uxui">UX/UI<span class="corner-square corner-square--top-right"></span><span
+                    class="corner-square corner-square--bottom-left"></span></h2>
+            <h2 class="page-title-frontend">Frontend<span class="corner-square corner-square--top-right"></span><span
+                    class="corner-square corner-square--bottom-left"></span></h2>
+            <h2 class="page-title-backend">Backend<span class="corner-square corner-square--top-right"></span><span
+                    class="corner-square corner-square--bottom-left"></span></h2>
+            <h2 class="page-title-designer">Designer<span class="corner-square corner-square--top-right"></span><span
+                    class="corner-square corner-square--bottom-left"></span></h2>
+            <h2 class="page-title-portfolio">Portfolio<span class="corner-square corner-square--top-right"></span><span
+                    class="corner-square corner-square--bottom-left"></span></h2>
+            <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+
         </section>
 
-        <section id="about" class="section">
-            <h2 class="section-title">Sobre mí</h2>
-            <p class="section-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae neque consectetur
-                doloribus architecto
-                dolor atque fugit. Saepe quibusdam eligendi voluptatibus voluptatum a, ut optio. Est cumque ipsam
-                pariatur eveniet mollitia.</p>
+        <section id="about" class="section about">
+            <div class="section-info">
+                <h2 class="section-title">Sobre mí<span class="corner-square corner-square--top-right"></span><span
+                        class="corner-square corner-square--bottom-left"></span>
+                    <svg class="pointer-yellow" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.832 30.735a2.1 2.1 0 0 0 3.899.54l3.657-5.413 8.588 8.587a1.867 1.867 0 0 0 2.64 0l1.833-1.832a1.866 1.866 0 0 0 0-2.641l-8.587-8.587 5.447-3.658a2.1 2.1 0 0 0-.54-3.899L7 7z"
+                            fill="#000" stroke="#ffca76" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </h2>
+                <p class="section-text">Desarrollador <span class="highlight">frontend</span> de Uruguay, 18 años,
+                    especializado en plasmar ideas y necesidades de negocio en <span class="highlight">diseños
+                        únicos</span>,
+                    <span class="highlight">funcionales</span> y <span class="highlight">modernos</span>.
+                    Actualmente curso profesionalmente el Tecnólogo en Informática y soy egresado de Bachillerato
+                    Técnico Informático, además de otros <span class="highlight">estudios complementarios</span>, lo que
+                    me brinda una <span class="highlight">base sólida</span> en desarrollo y tecnología. <br>Busco
+                    nuevos
+                    desafíos donde aportar valor real, continuar
+                    aprendiendo y crecer profesionalmente dentro de un equipo.
+                </p>
+            </div>
+            <div class="profile-container">
+                <div class="profile-img">
+                    <img src="assets/public/img/photos/profile.png" alt="Profile">
+                    <span class="corner-square corner-square--top-right"></span>
+                    <span class="corner-square corner-square--bottom-left"></span>
+                    <svg class="pointer-red" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.832 30.735a2.1 2.1 0 0 0 3.899.54l3.657-5.413 8.588 8.587a1.867 1.867 0 0 0 2.64 0l1.833-1.832a1.866 1.866 0 0 0 0-2.641l-8.587-8.587 5.447-3.658a2.1 2.1 0 0 0-.54-3.899L7 7z"
+                            fill="#000" stroke="#ff6e6e" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
         </section>
 
-        <section id="projects" class="section">
-            <h2 class="section-title">Proyectos</h2>
+        <section id="projects" class="section projects">
+            <div class="title-container">
+                <h2 class="section-title"><span class="corner-square corner-square--top-right"></span>
+                    <span class="corner-square corner-square--bottom-left"></span>Proyectos
+                </h2>
+            </div>
             <ul class="projects-list">
-                <li class="project-item"><p class="section-text">Project 1: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
-                <li class="project-item"><p class="section-text">Project 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
-                <li class="project-item"><p class="section-text">Project 3: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
+                <li class="project-item">
+                    <div class="project-container"><span class="corner-square corner-square--top-right"></span><span
+                            class="corner-square corner-square--bottom-left"></span>
+                        <img src="assets/public/img/photos/project1.png" alt="Project 1">
+                        <div class="pills-type">
+                            <span>Web App</span>
+                        </div>
+                        <div class="project-title">
+                            <p class="section-text">Aplicación Web de Gestión para Pizzeria</p>
+                        </div>
+                        <div class="pills-languages">
+                            <span class="pill">HTML</span>
+                            <span class="pill">CSS</span>
+                            <span class="pill">JS</span>
+                            <span class="pill">PHP</span>
+                            <span class="pill">MySQL</span>
+                            <span class="pill">XAMPP</span>
+                            <span class="pill">Figma</span>
+                            <span class="pill">GitHub</span>
+                        </div>
+                        <div class="btn-container">
+                            <button class="btn btn-primary btn-project">Ver Proyecto</button>
+                            <button class="btn btn-secondary btn-code">Ver Código</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <div class="project-container"><span class="corner-square corner-square--top-right"></span><span
+                            class="corner-square corner-square--bottom-left"></span>
+                        <img src="assets/public/img/photos/project2.png" alt="Project 2">
+                        <div class="pills-type">
+                            <span>Work In Progress</span>
+                        </div>
+                        <div class="project-title">
+                            <p class="section-text">Aplicación Web para Pastelería</p>
+                        </div>
+                        <div class="pills-languages">
+                            <span class="pill">HTML</span>
+                            <span class="pill">CSS</span>
+                            <span class="pill">JS</span>
+                            <span class="pill">Supabase</span>
+                            <span class="pill">Tailwind</span>
+                            <span class="pill">Astro</span>
+                            <span class="pill">Figma</span>
+                            <span class="pill">GitHub</span>
+                        </div>
+                        <div class="btn-container">
+                            <button class="btn btn-primary btn-project">Ver Proyecto</button>
+                            <button class="btn btn-secondary btn-code">Ver Código</button>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </section>
 
-        <section id="contact" class="section">
-            <h2 class="section-title">Contacto</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6">
+        <section id="contact" class="section contact">
+            <div class="title-container">
+                <h2 class="section-title"><span class="corner-square corner-square--top-right"></span>
+                    <span class="corner-square corner-square--bottom-left"></span>Contacto
+                    <svg class="pointer-green" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.832 30.735a2.1 2.1 0 0 0 3.899.54l3.657-5.413 8.588 8.587a1.867 1.867 0 0 0 2.64 0l1.833-1.832a1.866 1.866 0 0 0 0-2.641l-8.587-8.587 5.447-3.658a2.1 2.1 0 0 0-.54-3.899L7 7z"
+                            fill="#000" stroke="#4CAF50" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="comment">
+                        <img src="assets/public/img/photos/avatar.png" alt="Avatar">
+                        <div class="comment-content">
+                            <p class="comment-title">Esteban Casadei</p>
+                            <p class="comment-text">Estoy abierto a nuevas <span class="highlight">oportunidades</span> y a formar parte de equipos
+                                donde pueda <span class="highlight">aportar valor</span> y seguir creciendo. Si creés que podemos trabajar juntos, no
+                                dudes en <span class="highlight">contactarme</span>.</p>
+                        </div>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    stroke="#2898FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <polyline points="22,6 12,13 2,6" stroke="#2898FF" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>esteban.casadei@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                                    stroke="#2898FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>+598 99 123 456</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="#2898FF"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="12" cy="10" r="3" stroke="#2898FF" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Montevideo, Uruguay</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <span class="corner-square corner-square--top-right"></span><span
+                        class="corner-square corner-square--bottom-left"></span>
                     <form class="contact-form needs-validation" novalidate>
-                        <div class="mb-3">
+                        <div class="form-group">
                             <label for="name" class="form-label">Nombre</label>
                             <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
                             <div class="invalid-feedback">
@@ -99,7 +308,7 @@
                             </div>
                         </div>
 
-                        <div class="mb-3">
+                        <div class="form-group">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
                             <div class="invalid-feedback">
@@ -107,7 +316,7 @@
                             </div>
                         </div>
 
-                        <div class="mb-3">
+                        <div class="form-group">
                             <label for="subject" class="form-label">Asunto</label>
                             <input type="text" class="form-control" id="subject" placeholder="Asunto del mensaje"
                                 required>
@@ -116,7 +325,7 @@
                             </div>
                         </div>
 
-                        <div class="mb-3">
+                        <div class="form-group">
                             <label for="message" class="form-label">Mensaje</label>
                             <textarea class="form-control" id="message" rows="5" placeholder="Tu mensaje..."
                                 required></textarea>
@@ -125,8 +334,8 @@
                             </div>
                         </div>
 
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button type="reset" class="btn btn-outline-secondary me-md-2">Limpiar</button>
+                        <div class="btn-container">
+                            <button type="reset" class="btn btn-secondary">Limpiar</button>
                             <button type="submit" class="btn btn-primary">
                                 <span class="spinner-border spinner-border-sm d-none" role="status"
                                     aria-hidden="true"></span>

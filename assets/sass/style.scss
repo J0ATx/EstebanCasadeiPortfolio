@@ -1,0 +1,15 @@
+// Import all SASS modules
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'layout/layout';
+@import 'components/components';
+@import 'sections/sections';
+@import 'sections/hero';
+@import 'sections/about';
+@import 'sections/projects';
+@import 'sections/contact';
+
+.highlight {
+    color: #FFCA76;
+    font-weight: bold;
+}
