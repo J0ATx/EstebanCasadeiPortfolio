@@ -124,10 +124,11 @@
   rotate: -15deg;
 
   @include mobile-large {
-    font-size: 7vw;
-    height: 15vw;
-    width: 15vw;
+    font-size: 5vw;
+    height: 10vw;
+    width: 25vw;
     left: 15%;
+    top: 70%;
   }
 }
 
@@ -147,9 +148,10 @@
   rotate: 5deg;
 
   @include mobile-large {
-    font-size: 6vw;
-    height: 12vw;
-    width: 28vw;
+    font-size: 5vw;
+    height: 10vw;
+    width: 25vw;
+    left: 45%;
     top: 85%;
   }
 }
