@@ -54,12 +54,15 @@
 
     .contact-info {
         width: 49%;
+
         @include desktop-large {
             display: flex;
             justify-content: center;
             flex-direction: column;
             margin: 0 auto;
+            width: 100%;
         }
+
 
         .comment {
             display: flex;
@@ -83,6 +86,11 @@
                 border-radius: 50%;
                 object-fit: cover;
                 flex-shrink: 0;
+
+                @include mobile-large {
+                    width: 32px;
+                    height: 32px;
+                }
             }
 
             .comment-content {
@@ -148,9 +156,6 @@
         padding: 2rem;
         width: 100%;
         position: relative;
-        animation: slideInFromRight 1s ease-out forwards;
-        animation-timeline: scroll(root block);
-        animation-range: 0 50%;
 
         @include desktop-large {
             max-width: 100%;

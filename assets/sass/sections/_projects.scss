@@ -36,9 +36,6 @@
         font-size: 6vw;
         padding-inline: 16px;
         font-weight: bold;
-        animation: slideInFromLeft 1s ease-out forwards;
-        animation-timeline: scroll(root block);
-        animation-range: 0 50%;
     }
 
     .project-container {
