@@ -1,0 +1,115 @@
+// Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  line-height: $spacing-xl;
+  color: $text-primary;
+  background-color: $bg-primary;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+h2{
+  font-family: "Iosevka Charon", monospace;
+}
+
+// Media elements
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+// Header
+.main-header {
+  height: $header-height;
+  position: fixed;
+  background-color: $bg-primary;
+  width: 100%;
+  z-index: $z-fixed;
+}
+
+// Main content
+main {
+  background-color: $bg-secondary;
+}
+
+// Spacer utility
+.spacer {
+  padding: 12px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+
+  .logo-img {
+    @include mobile-large {
+      width: 36px;
+    }
+
+    @include mobile-medium {
+      width: 28px;
+    }
+
+    @include mobile-small {
+      width: 16px;
+    }
+  }
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 24px;
+  width: 250px;
+
+  .tools-link {
+    color: white;
+    padding: 8px;
+  }
+
+  .tools-link:hover {
+    background-color: $primary-color;
+    padding: 8px;
+    border-radius: 8px;
+  
+    @include mobile-large {
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+  
+    @include mobile-medium {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  }
+
+
+  @include mobile-large {
+    width: 240px;
+    gap: 12px;
+    margin-left: 12px;
+  }
+
+  @include mobile-medium {
+    width: 200px;
+  }
+
+  @include mobile-small {
+    width: 200px;
+  }
+
+}
