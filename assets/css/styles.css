@@ -1237,8 +1237,13 @@ main {
 .about .profile-container {
   display: flex;
   align-items: center;
-  margin-left: 128px;
+  margin-left: 300px;
   height: 100%;
+}
+@media (max-width: 1440px) {
+  .about .profile-container {
+    margin-left: 100px;
+  }
 }
 @media (max-width: 1280px) {
   .about .profile-container {
