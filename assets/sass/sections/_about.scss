@@ -78,9 +78,11 @@
   .profile-container {
     display: flex;
     align-items: center;
-    margin-left: 128px;
+    margin-left: 300px;
     height: 100%;
-
+    @include desktop-extra-large {
+      margin-left: 100px;
+    }
     @include desktop-large {
       margin-left: 64px !important;
     }
