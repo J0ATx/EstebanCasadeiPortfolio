@@ -1191,7 +1191,7 @@ main {
   font-weight: bold;
   animation: slideInFromLeft 1s ease-out forwards;
   animation-timeline: scroll(root block);
-  animation-range: 0 50%;
+  animation-range: 0 40%;
 }
 @media (max-width: 1440px) {
   .about .section-title {
@@ -1215,7 +1215,7 @@ main {
   transform: translate(-50%, -50%);
   animation: pointerDrag 1s step-end forwards;
   animation-timeline: scroll(root block);
-  animation-range: 0 50%;
+  animation-range: 0 40%;
 }
 @media (max-width: 1024px) {
   .about .pointer-yellow {
@@ -1674,17 +1674,18 @@ main {
   }
 }
 .projects .project-container .pills-type {
-  font-size: 0.8rem;
-  color: #999;
-  text-transform: uppercase;
+  font-size: 1rem;
+  color: #ececec;
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: fit-content;
-  background-color: #333333;
-  padding: 0.5rem 1rem;
-  border-radius: 5rem;
-  border: 1px solid #6c757d;
   margin-inline: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #FFCA76;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2px;
+  text-underline-position: under;
 }
 @media (max-width: 620px) {
   .projects .project-container .pills-type {
@@ -1731,6 +1732,9 @@ main {
 }
 .projects .project-container .btn-container .btn {
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 438px) {
   .projects .project-container .btn-container .btn {
@@ -1984,8 +1988,8 @@ main {
 .contact .contact-form-container {
   position: relative;
   display: inline-block;
-  border: 3px solid #C2B86B;
-  color: #C2B86B;
+  border: 3px solid #FFCA76;
+  color: #FFCA76;
 }
 .contact .contact-form-container::before, .contact .contact-form-container::after {
   content: "";
@@ -1993,7 +1997,7 @@ main {
   width: 15px;
   height: 15px;
   background-color: white;
-  border: 3px solid #C2B86B;
+  border: 3px solid #FFCA76;
   border-radius: 2px;
   z-index: 10;
 }
@@ -2023,7 +2027,7 @@ main {
   width: 15px;
   height: 15px;
   background-color: white;
-  border: 3px solid #C2B86B;
+  border: 3px solid #FFCA76;
   border-radius: 2px;
   z-index: 10;
 }
@@ -2052,7 +2056,7 @@ main {
   width: 15px;
   height: 15px;
   background-color: white;
-  border: 3px solid #C2B86B;
+  border: 3px solid #FFCA76;
   border-radius: 2px;
   z-index: 10;
 }
@@ -2149,11 +2153,11 @@ main {
   border: none;
 }
 .contact .contact-form-container .btn-container .btn.btn-primary {
-  background-color: #C2B86B;
+  background-color: #FFCA76;
   color: white;
 }
 .contact .contact-form-container .btn-container .btn.btn-primary:hover {
-  background-color: #aca35f;
+  background-color: #e6b85c;
 }
 .contact .contact-form-container .btn-container .btn.btn-primary:active {
   transform: translateY(0);

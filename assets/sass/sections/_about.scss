@@ -32,7 +32,7 @@
     font-weight: bold;
     animation: slideInFromLeft 1s ease-out forwards;
     animation-timeline: scroll(root block);
-    animation-range: 0 50%;
+    animation-range: 0 40%;
 
     @include desktop-extra-large {
       animation-range: 0 30%;
@@ -55,7 +55,7 @@
     transform: translate(-50%, -50%);
     animation: pointerDrag 1s step-end forwards;
     animation-timeline: scroll(root block);
-    animation-range: 0 50%;
+    animation-range: 0 40%;
 
     @include desktop {
       width: 32px;
