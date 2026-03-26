@@ -151,7 +151,7 @@
     }
 
     .contact-form-container {
-        @include page-title-mixin(#C2B86B);
+        @include page-title-mixin(#FFCA76);
         flex: 1;
         padding: 2rem;
         width: 100%;
@@ -226,11 +226,11 @@
                 border: none;
 
                 &.btn-primary {
-                    background-color: #C2B86B;
+                    background-color: #FFCA76;
                     color: white;
 
                     &:hover {
-                        background-color: #aca35f;
+                        background-color: #e6b85c;
                     }
 
                     &:active {
