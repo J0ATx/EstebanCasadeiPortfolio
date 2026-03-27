@@ -54,9 +54,16 @@ main {
   display: flex;
   align-items: center;
 
+  @include mobile-large {
+    padding-left: 10px;
+  }
   @include mobile-medium {
+    padding: 0;
     padding-top: 0px;
-    padding-bottom: 0px;
+    padding-left: 16px;
+  }
+  @include mobile-small {
+    padding-left: 10px;
   }
 
   .logo-img {

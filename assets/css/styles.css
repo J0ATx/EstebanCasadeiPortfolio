@@ -49,10 +49,21 @@ main {
   display: flex;
   align-items: center;
 }
+@media (max-width: 620px) {
+  .spacer {
+    padding-left: 10px;
+  }
+}
 @media (max-width: 438px) {
   .spacer {
+    padding: 0;
     padding-top: 0px;
-    padding-bottom: 0px;
+    padding-left: 16px;
+  }
+}
+@media (max-width: 350px) {
+  .spacer {
+    padding-left: 10px;
   }
 }
 .spacer .logo-img {
