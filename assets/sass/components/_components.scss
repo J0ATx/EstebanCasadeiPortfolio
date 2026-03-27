@@ -13,12 +13,12 @@
     border-top-right-radius: $border-radius-lg;
     margin-top: 16px;
     width: fit-content;
-    padding-left: 6px;
+    padding-left: 12px;
     padding-right: 64px;
     height: $tab-height;
     margin-right: 6px;
     @include flex-align-center;
-    gap: 4px;
+    gap: 6px;
 
     &:hover {
       color: $text-white;
@@ -38,29 +38,43 @@
     }
 
     &:not(.home-tab) svg {
-      max-width: 100px;
-      max-height: 100px;
+      max-width: 20px;
+      max-height: 20px;
       height: $icon-xl;
       width: $icon-xl;
     }
 
     @include mobile-large {
-      padding-left: 4px;
+      padding-left: 6px;
       padding-right: 32px;
       font-size: $font-size-md;
       margin-right: 4px;
+
+      &:not(.home-tab) svg {
+        max-width: 16px;
+        max-height: 16px;
+        height: $icon-xl;
+        width: $icon-xl;
+      }
     }
 
     @include mobile-medium {
-      padding-left: 2px;
+      padding-left: 12px;
       padding-right: 16px;
       font-size: $font-size-sm;
       margin-right: 2px;
       margin-top: 16px;
+
+      &:not(.home-tab) svg {
+        max-width: 12px;
+        max-height: 12px;
+        height: $icon-xl;
+        width: $icon-xl;
+      }
     }
 
     @include mobile-small {
-      padding-left: 2px;
+      padding-left: 12px;
       padding-right: 16px;
       font-size: $font-size-xs;
       margin-right: 2px;
@@ -122,13 +136,11 @@
     }
 
     @include mobile-medium {
-      height: $icon-md;
-      width: $icon-md;
+      display: none;
     }
 
     @include mobile-small {
-      height: $icon-md;
-      width: $icon-md;
+      display: none;
     }
   }
 }

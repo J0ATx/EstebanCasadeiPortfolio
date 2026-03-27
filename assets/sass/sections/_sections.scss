@@ -4,8 +4,9 @@
 
   &.home {
     background-color: $bg-secondary;
+    overflow:hidden;
   }
-
+  
   &.about {
     background-color: $bg-tertiary;
     border-top: 2px solid $secondary-hover;
@@ -15,10 +16,12 @@
   &.projects {
     background-color: $bg-quaternary;
     border-top: 2px solid $secondary-hover;
+    min-height: fit-content;
   }
 
   &.contact {
     background-color: $bg-secondary;
     border-top: 2px solid $secondary-hover;
+    min-height: fit-content;
   }
 }
