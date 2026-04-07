@@ -17,14 +17,15 @@
     padding-right: 64px;
     height: $tab-height;
     margin-right: 6px;
-    @include flex-align-center;
     gap: 6px;
-
+    box-shadow: inset 0 -16px 16px rgba(0, 0, 0, 0.1);
+    @include flex-align-center;
+    
     &:hover {
       color: $text-white;
       background-color: $bg-light;
     }
-
+    
     &.active {
       color: $text-white;
       background-color: $bg-light;
@@ -36,7 +37,7 @@
       max-height: $icon-md;
       flex-shrink: 0;
     }
-
+    
     &:not(.home-tab) svg {
       max-width: 20px;
       max-height: 20px;
